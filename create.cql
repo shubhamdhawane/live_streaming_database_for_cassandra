@@ -1,6 +1,6 @@
 DROP KEYSPACE project;
 
-CREATE KEYSPACE project WITH replication = {'class': 'NetworkTopologyStrategy', 'ap-northeast-1': 2,'us-east-1': 3 };
+CREATE KEYSPACE project WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3 };
 
 USE project;
 
